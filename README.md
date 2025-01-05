@@ -1,49 +1,57 @@
-# rock-paper-scissors-lizard-Spock
-# Code execution procedure :  
+# Rock-Paper-Scissors-Spock-Lizard
 
-Get ready:  
+## Description
+"Rock-Paper-Scissors-Spock-Lizard" is an extended and interactive version of the classic Rock-Paper-Scissors game, using real-time hand gesture recognition. With a webcam and the MediaPipe library, the player's gestures are detected and compared to the randomly generated choices of the computer.
 
-- Make sure Python is installed on your computer (version 3.7 or higher).  
-- Check that the necessary libraries (opencv-python, mediapipe, etc.) are installed. If not, you can install them with pip.   
+## Game Rules
+The game follows the classic "Rock-Paper-Scissors" rules with the addition of two extra gestures: "Spock" and "Lizard." Each gesture beats two other gestures and is beaten by two different gestures:
 
-Download the code from GitHub :   
+- **Rock**:
+  - Beats: Scissors, Lizard
+  - Loses to: Paper, Spock
+- **Paper**:
+  - Beats: Rock, Spock
+  - Loses to: Scissors, Lizard
+- **Scissors**:
+  - Beats: Paper, Lizard
+  - Loses to: Rock, Spock
+- **Spock**:
+  - Beats: Rock, Scissors
+  - Loses to: Paper, Lizard
+- **Lizard**:
+  - Beats: Paper, Spock
+  - Loses to: Rock, Scissors
 
-- Go to the GitHub link above and access the repository containing the code.  
-- Download the file  
+## Recognizable Gestures
+Here’s how the gestures are interpreted by the system:
+- **Rock**: All fingers are folded.
+- **Paper**: All fingers are extended.
+- **Scissors**: Only the index and middle fingers are extended.
+- **Spock**: The index and middle fingers are extended, and the middle and ring fingers are spread apart.
+- **Lizard**: All fingers except the pinky are folded, with the thumb close to the pinky.
 
-Open an IDE:  
+## How to Play
+1. Ensure that your webcam is connected and working properly.
+2. Run the Python program.
+3. Position your hand in front of the camera and perform a recognizable gesture.
+4. The computer will randomly choose a gesture.
+5. The system will compare the gestures and display:
+   - The player's gesture
+   - The computer's gesture
+   - The winner of the round
+   - The cumulative scores
+6. Continue playing as many rounds as you like!
 
-- Using an IDE such as Visual Studio Code or PyCharm, open the project in the IDE.  
+## Controls
+- **`q`**: Quit the game.
 
-Install the necessary libraries:  
+## Technical Requirements
+- Python 3.x
+- Required Python libraries:
+  - OpenCV
+  - MediaPipe
+  - Random
+  - Math
+- A working webcam
 
-- Run the following command in the terminal:  
-      pip install opencv-python mediapipe  
-- If additional libraries are required, please refer to the error messages displayed during execution.  
-
-Connect the webcam :  
-
-- Connect your webcam if you're using a desktop computer.  
-
-Run the program:  
-
-- In your IDE, click on “Run”.  
-
-Use the application:  
-
-- Place your hand in front of the camera.  
-- Make one of the following gestures to play:  
-    Stone: All fingers down.  
-    Leaf: All fingers up.
-    Scissors: Thumb and index finger up.  
-    Spock: “Vulcan” gesture (thumb separated from other fingers, two groups of two fingers).  
-    Lizard: Thumb and little finger together.  
-_ The computer will choose a gesture at random, and the program will determine the winner.  
-
-Stop the program :  
-
-- Press q to quit the application.  
-
-Possible problems:  
-
-- If a webcam error occurs, check that the webcam is not being used by another application. 
+Enjoy the game! 🎮
